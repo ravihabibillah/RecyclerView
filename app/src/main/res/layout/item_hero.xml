@@ -23,18 +23,19 @@
             android:id="@+id/tvNamaHero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Pahlawan" android:textColor="@android:color/black"/>
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:id="@+id/tvDeskripsi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/deskripsi"
-                android:justificationMode="inter_word"/>
-        </ScrollView>
+            android:text="Nama Pahlawan"
+            android:textColor="@android:color/black"/>
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp">-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvDeskripsi"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/deskripsi"-->
+<!--                android:justificationMode="inter_word"/>-->
+<!--        </ScrollView>-->
 
     </LinearLayout>
 

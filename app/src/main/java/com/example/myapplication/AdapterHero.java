@@ -33,7 +33,7 @@ public class AdapterHero extends RecyclerView.Adapter<AdapterHero.ViewHolder> {
 
         Glide.with(context).load(getModelHeroes().get(position).getGambarHero()).into(holder.ivGambarHero);
         holder.tvNamaHero.setText(getModelHeroes().get(position).getNamaHero());
-        holder.tvDeskripsiHero.setText(getModelHeroes().get(position).getDeskripsiHero());
+//        holder.tvDeskripsiHero.setText(getModelHeroes().get(position).getDeskripsiHero());
         holder.layoutItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +41,8 @@ public class AdapterHero extends RecyclerView.Adapter<AdapterHero.ViewHolder> {
                 intent.putExtra("nama",getModelHeroes().get(position).getNamaHero());
                 intent.putExtra("deskripsi",getModelHeroes().get(position).getDeskripsiHero());
                 intent.putExtra("gambar",getModelHeroes().get(position).getGambarHero());
+
+                context.startActivity(intent);
             }
         });
     }
@@ -59,7 +61,7 @@ public class AdapterHero extends RecyclerView.Adapter<AdapterHero.ViewHolder> {
             super(itemView);
             ivGambarHero = itemView.findViewById(R.id.ivGambarHero);
             tvNamaHero = itemView.findViewById(R.id.tvNamaHero);
-            tvDeskripsiHero = itemView.findViewById(R.id.tvDeskripsi);
+//            tvDeskripsiHero = itemView.findViewById(R.id.tvDeskripsi);
             layoutItem = itemView.findViewById(R.id.layoutItem);
         }
     }

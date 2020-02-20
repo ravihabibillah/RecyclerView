@@ -14,10 +14,6 @@ public class DetailActivity extends AppCompatActivity {
     private ImageView gambar;
     private TextView nama,deskripsi;
 
-
-
-    Context context;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
