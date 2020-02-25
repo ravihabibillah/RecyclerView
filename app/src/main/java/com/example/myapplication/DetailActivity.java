@@ -19,17 +19,17 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        gambar = findViewById(R.id.gambarDetail);
+//        gambar = findViewById(R.id.gambarDetail);
         nama = findViewById(R.id.namaDetail);
         deskripsi = findViewById(R.id.deskripsiDetail);
 
         Bundle bundle = getIntent().getExtras();
         String nameHero = bundle.getString("nama");
         String deskripsiHero = bundle.getString("deskripsi");
-        String gambarHero = bundle.getString("gambar");
+//        String gambarHero = bundle.getString("gambar");
         nama.setText(nameHero);
         deskripsi.setText(deskripsiHero);
-        Glide.with(this).load(gambarHero).into(gambar);
+//        Glide.with(this).load(gambarHero).into(gambar);
 
     }
 }
